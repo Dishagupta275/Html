@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindConnect Login</title>
+    <title>MindConnect Registration</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color:#194569;
+            background-color: #1c4e80;
             color: #fff;
             display: flex;
             flex-direction: column;
@@ -33,11 +33,11 @@
         }
         .navbar-text {
             font-size: 17px;
-            color: #194569;
+            color: #1c4e80;
             padding: 14px 16px;
         }
         .navbar a {
-            color: #194569;
+            color: #1c4e80;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -45,7 +45,7 @@
         }
         .navbar a:hover {
             background-color: #ddd;
-            color: #194569;
+            color: #1c4e80;
         }
         .container {
             display: flex;
@@ -67,45 +67,51 @@
         .logo-text {
             font-size: 36px;
             font-weight: bold;
-            color: #194569;
+            color: #1c4e80;
             margin-bottom: 10px;
         }
         h2 {
             margin-bottom: 10px;
             font-size: 18px;
-            color: #194569;
+            color: #1c4e80;
         }
         h3 {
             margin-bottom: 20px;
             font-size: 18px;
-            color: #194569;
+            color: #1c4e80;
         }
         .input-group {
             margin-bottom: 15px;
         }
-        input {
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-align: left;
+        }
+        input, select {
             width: 100%;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 14px;
         }
-        .login-options {
+        .register-options {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
         }
-        .login-options a {
-            color: #194569;
+        .register-options a {
+            color: #1c4e80;
             text-decoration: none;
         }
-        .login-options a:hover {
+        .register-options a:hover {
             text-decoration: underline;
         }
         button {
             padding: 10px 20px;
-            background-color: #194569;
+            background-color: #1c4e80;
             color: white;
             border: none;
             border-radius: 5px;
@@ -113,14 +119,14 @@
             font-size: 16px;
         }
         button:hover {
-            background-color: #194569;
+            background-color: #123456;
         }
         p {
             margin-top: 15px;
             font-size: 14px;
         }
         a {
-            color: #194569;
+            color: #1c4e80;
             text-decoration: none;
         }
         a:hover {
@@ -144,23 +150,31 @@
         <div class="form-container">
             <h1 class="logo-text">MindConnect</h1>
             <h2>A Peer-to-Peer Therapy Platform</h2>
-            <h3>WELCOME BACK!!</h3>
-            <form id="loginForm">
+            <h3>Register</h3>
+            <form id="registrationForm">
                 <div class="input-group">
-                    <input type="text" id="email" name="email" placeholder="Enter email/phone number" required>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
                 </div>
                 <div class="input-group">
+                    <label for="email">Email/Phone</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Email/Phone" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Enter Password" required>
                 </div>
-                <div class="login-options">
-                    <a href="#">Forgot Password?</a>
-                    <button type="submit">Login</button>
+                <div class="input-group">
+                    <label for="userType">User Type</label>
+                    <select id="userType" name="userType" required>
+                        <option value="client">Client</option>
+                        <option value="therapist">Consultant</option>
+                    </select>
                 </div>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="#">Login</a></p>
             </form>
-            <p>Don't have an account? <a href="C:\Users\Disha Gupta\Html\mind connect\signup.html">Sign Up</a></p>
         </div>
     </div>
 </body>
 </html>
-
-
