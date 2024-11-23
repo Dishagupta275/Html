@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindConnect Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #194569;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-text {
+            font-size: 17px;
+            color: #194569;
+            padding: 14px 16px;
+        }
+        .navbar a {
+            color: #194569;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #194569;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .logo-text {
+            font-size: 36px;
+            font-weight: bold;
+            color: #194569;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #194569;
+        }
+        h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #194569;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-align: left;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .register-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .register-options a {
+            color: #194569;
+            text-decoration: none;
+        }
+        .register-options a:hover {
+            text-decoration: underline;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #194569;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #123456;
+        }
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        a {
+            color: #194569;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <span class="navbar-text">MindConnect</span>
+        </div>
+        <div class="navbar-right">
+            <a href="https://dishagupta275.github.io/Html/mind%20connect/">Home</a>
+            <a href="https://dishagupta275.github.io/Html/mind%20connect/about.html">About</a>
+            <a href="C:\Users\Disha Gupta\Html\mind connect\service.html">Services</a>
+            <a href="https://dishagupta275.github.io/Html/mind%20connect/login.html">Login</a>
+            <a href="https://dishagupta275.github.io/Html/mind%20connect/signup.html">Register</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <h1 class="logo-text">MindConnect</h1>
+            <h2>A Peer-to-Peer Therapy Platform</h2>
+            <h3>Register</h3>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email/Phone</label>
+                    <input type="text" id="email" name="email" placeholder="Enter Email/Phone" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="input-group">
+                    <label for="userType">User Type</label>
+                    <select id="userType" name="userType" required>
+                        <option value="client">Client</option>
+                        <option value="therapist">Consultant</option>
+                    </select>
+                </div>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="https://dishagupta275.github.io/Html/mind%20connect/login.html">Login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
