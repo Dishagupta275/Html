@@ -1,11 +1,32 @@
+@keyframes gradientAnimation {
+    0% {
+        background-color: #e667c6;
+    }
+    25%
+    {
+        background-color: #7ff5f9;
+    }
+    50% {
+        background-color: #508ffc;
+    }
+    75%{
+        background-color: #9d52f9;
+    }
+    100% {
+        background-color: #800ef3;
+    }
+}
+
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    animation: gradientAnimation 5s ease infinite; /* Animated gradient */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .registration-container {
